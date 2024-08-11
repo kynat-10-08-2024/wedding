@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Invitation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Italianno&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#details" id="details-links" data-en="Details" data-uk="Деталі">Details</a></li>
+                <li><a href="#itinerary" id="info-links" data-en="Itinerary" data-uk="План">Itinerary</a></li>
+                <li class="title">N & K</li>
+                <li><a href="#venue" id="venue-links" data-en="Venue" data-uk="Локація">Venue</a></li>
+                <li><a href="#photos" id="photos-links" data-en="Photos" data-uk="Фото">Photos</a></li>
+                <li>
+                <select id="language-switcher" class="language-switcher">
+                    <option value="en">EN</option>
+                    <option value="uk">UA</option>
+                </select>
+                </li>
+            </ul>
+        </nav>
+        
+        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+            
+            <ul class="mobile-menu">
+                <li>
+                <select id="language-switcher2" class="language-switcher2">
+                    <option value="en">EN</option>
+                    <option value="uk">UA</option>
+                </select>
+                </li>
+                <li><a href="#details" id="details-link" data-en="Details" data-uk="Деталі">Details</a></li>
+                <li><a href="#itinerary" id="info-link" data-en="Itinerary" data-uk="План">Itinerary</a></li>
+                <li><a href="#venue" id="venue-link" data-en="Venue" data-uk="Локація">Venue</a></li>
+                <li><a href="#photos" id="photos-link" data-en="Photos" data-uk="Фото">Photos</a></li>
+                
+            </ul>
+            <h1 id="NK">N&K</h1>
+        </div>
+    </header>
+    <div class="container">
+        <main>
+            <h2 data-en="THE" data-uk="">THE</h2>
+            <h3 data-en="Wedding" data-uk="Весілля">Wedding</h3>
+            <h2 data-en="OF" data-uk="">OF</h2>
+            <h1 data-en="NATALIE & KIRILL" data-uk="НАТАЛІЇ ТА КИРИЛА">NATALIE & KIRILL</h1>
+            <h4 data-en="OCTOBER 8, 2024" data-uk="8 ЖОВТНЯ 2024">OCTOBER 8, 2024</h4>
+            <div id="countdown"></div>
+            <h5 data-en="Borgo dé Brandi" data-uk="Borgo dé Brandi">Borgo dé Brandi</h5>
+            <h6 data-en="Loc. Caminata, 3, 53035" data-uk="Loc. Caminata, 3, 53035">Loc. Caminata, 3, 53035</h6> 
+            <h6 data-en="Monteriggioni, SI, Italy" data-uk="Monteriggioni, SI, Italy">Monteriggioni, SI, Italy</h6>
+
+        </main>
+
+        <section id="venue">
+                <h2 class="venue-h2" data-en="Venue" data-uk="Місце">Venue</h2>
+                <p class="venue-p1" data-en="Villa Borgo de Brandi" data-uk="Вілла Borgo de Brandi">Villa Borgo de Brandi</p>
+                <p id="venuep2" class="venue-p2" data-en="Address: Loc. Caminata, 3, 53035 Monteriggioni, SI, Italia" data-uk="Адреса: Loc. Caminata, 3, 53035 Monteriggioni, SI, Italia"><a href="https://www.google.com/maps/place/Borgo+dé+Brandi/@43.3811408,11.2293193,15z/data=!4m2!3m1!1s0x0:0x637c2ddd2be84115?sa=X&ved=1t:2428&ictx=111">Address: Loc. Caminata, 3, 53035 Monteriggioni, SI, Italia</a></p>
+                <div class="venue-photos">
+                    <img src="venue1.jpg" alt="Villa photo 1">
+                    <img src="venue2.jpg" alt="Villa photo 2">
+                    <img src="venue3.jpg" alt="Villa photo 3">
+                </div>
+        </section>
+
+        <section id="itinerary">
+            <h2 class="itinerary" data-en="Itinerary" data-uk="Хронологія подій">Itinerary</h2>
+            <img src="Timeline copy.png" alt="Wedding Timeline" class="timeline">
+        </section>
+
+        <section id="details">
+                <h2 class="details-h2" data-en="Attire - Coctail/Semi-Formal" data-uk="Дрес-код - Коктельний">Attire - Coctail/Semi-Formal </h2>
+
+                <div data-en="Feel free to choose any colour for your attire, but we would appreciate it if you could consider the colour palette provided below." data-uk="Ми будемо раді, якщо ви зможете притриматись кольорової гами нашого весілля (наведеної нище) для вибору вашого вбрання." class="attire-details">Feel free to choose any colour for your attire, but we would appreciate it if you could consider the colour palette provided below. </div>
+
+                <h3 class="details-h3" data-en="Colour palette" data-uk="Палітра кольорів">Colour palette</h3>
+
+                <div class="color-boxes">
+                    <div class="color-box" style="background-image: url('color1.jpg');"></div>
+                    <div class="color-box" style="background-image: url('color2.jpg');"></div>
+                    <div class="color-box" style="background-image: url('color3.jpg');"></div>
+                    <div class="color-box" style="background-image: url('color7.jpg');"></div>
+                    <div class="color-box" style="background-image: url('color4.jpg');"></div>
+                    <div class="color-box" style="background-image: url('color6.jpg');"></div>
+                </div>
+                <div class="exclude-section">
+                    <div class="white-box"></div>
+                    <div data-en="Exclude dresses in white colour" data-uk="Уникайте варіанти суконь білого кольору" class="exclude-text">Exclude dresses in white colour</div>
+                </div>
+
+
+
+                    /* LOOK HERE */
+
+                <div class="organization" data-en="ORGANIZATIONAL MOMENTS" data-uk="ОРГАНІЗАЦІЙНІ МОМЕНТИ"> ORGANIZATIONAL MOMENTS</div>
+                <div class="organization-details" data-en="Closest Airports:<br> Florence -  Approx. 50 minutes by car<br> Bologna - Approx. 2 hours by car<br> Rome - Approx. 3 hours by car <br><br> Additional Information:<br>- Check in is on October 7th, 15:00 PM, however, if you arrive earlier, we will be there to meet you. <br> Please let us know in advance.<br>- Breakfast is included (8:00-10:00 AM).<br>- There will be a pizza party on October 7th - dress code is casual.<br>- There is a swimming pool - feel free to bring swimsuites.<br>- For more villa details please visit their website." data-uk="Найблищі Аеропорти:       Флоренція -  Приблизно 50 хвилин машиною                 Болонья - Приблизно 2 години машиною            Рим - Приблизно 3 години машиною           Додаткова інформація:                                        - Заїзд відбудеться 7 жовтня о 15:00, однак, якщо ви приїдете раніше, ми зустрінемо вас.  Будь ласка, повідомте нас заздалегідь.- Сніданок включено (8:00-10:00).- 7 жовтня, 17:00 буде піца вечірка - кежуал дрес-код. -  - Щоб дізнатися більше про віллу, відвідайте їхній веб-сайт - https://www.borgodebrandi.com/en/">Closest Airports:<br> Florence -  Approx. 50 minutes by car<br> Bologna - Approx. 2 hours by car<br> Rome - Approx. 3 hours by car <br><br> Additional Information:<br>- Check in is on October 7th, 3:00 PM. If you arrive earlier, we will be there to meet you. <br> Please let us know in advance.<br>- Breakfast is included from 8:00-10:00 AM.<br>- There will be a pizza party on October 7th at 5:00 PM. The dress code is casual.<br>- We will be sending out a form for you to select your dish preferences for the wedding dinner. You can choose 2 first courses and 1 second course option per person. Please complete the form on or before September 8th.<br>- For more venue details please visit their <a href="https://www.borgodebrandi.com/en/">website</a>.<br><br> We can't wait to celebrate our special day with you!!! <br> </div>
+
+        </section>
+
+
+        <section id="photos">
+                <h2 class="Photos" data-en="Wedding Photos" data-uk="Весільні Фото">Wedding Photos</h2>
+                <div data-en="We would like to remember every detail of our BIG DAY, so if you snapped some photos during our wedding, we'd love to see them. Please use the link below. Thank you :)" data-uk="Ми хочемо запам’ятати кожну деталь нашого особливого дня, тож якщо ви зробили фото під час нашого весілля, ми будемо раді їх побачити. Будь ласка, скористайтеся посиланням нижче. Дякуємо :)" class="wedding-photos">We would like to remember every detail of our BIG DAY, so if you snapped some photos during our wedding, we'd love to see them. Please use the link below. <br> Thank you :)  </div>
+                <a href="https://photos.app.goo.gl/6krcemK2HMGqR7NF9" target="_blank" class="photo-button" data-en="Upload All Photos You Took Here" data-uk="Додайте фото, які ви зробили тут">Upload All Photos You Took Here</a>
+        </section>
+
+        
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
