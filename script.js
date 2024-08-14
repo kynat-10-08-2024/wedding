@@ -18,14 +18,6 @@ function scrollAppear(){
   }
 
 
-  var itineraryPlan = document.querySelector('.itinerary')
-  var itineraryPosition = itineraryPlan.getBoundingClientRect().top;
-  var screenPosition = window.innerHeight / 1.3;
-
-  if(itineraryPosition < screenPosition){
-    itineraryPlan.classList.add('itinerary-appear');
-  }
-
 
   var photosVenue = document.querySelector('.venue-photos')
   var photoPosition = photosVenue.getBoundingClientRect().top;
@@ -111,6 +103,14 @@ function scrollAppear(){
     organzaTion.classList.add('organization-details-appear');
   }
 
+  var weddingPhotos = document.querySelector('.wedding-photos')
+  var wedingPosition = weddingPhotos.getBoundingClientRect().top;
+  var screenPosition = window.innerHeight / 1.4;
+
+  if(wedingPosition < screenPosition){
+    weddingPhotos.classList.add('wedding-photos-appear');
+  }
+
   var photoButton = document.querySelector('.photo-button')
   var buttonPosition = photoButton.getBoundingClientRect().top;
   var screenPosition = window.innerHeight / 1.4;
@@ -118,6 +118,24 @@ function scrollAppear(){
   if(buttonPosition < screenPosition){
     photoButton.classList.add('photo-button-appear');
   }
+
+  var attireDetails = document.querySelector('.attire-details')
+  var attirePosition = attireDetails.getBoundingClientRect().top;
+  var screenPosition = window.innerHeight / 1.4;
+
+  if(attirePosition < screenPosition){
+    attireDetails.classList.add('attire-details-appear');
+  }
+
+  var detailsHthree = document.querySelector('.details-h3')
+  var detPosition = detailsHthree.getBoundingClientRect().top;
+  var screenPosition = window.innerHeight / 1.4;
+
+  if(detPosition < screenPosition){
+    detailsHthree.classList.add('details-h3-appear');
+  }
+
+
 }
 
   window.addEventListener('scroll',scrollAppear)
@@ -207,22 +225,38 @@ window.onclick = function(event) {
 // Language switcher
 var languageSwitcher = document.getElementById("language-switcher");
 languageSwitcher.addEventListener("change", function() {
-  var selectedLanguage = this.value;
-  var elements = document.querySelectorAll("[data-en]");
+    var selectedLanguage = this.value;
+    var elements = document.querySelectorAll("[data-en]");
 
-  elements.forEach(function(element) {
-    element.textContent = element.getAttribute("data-" + selectedLanguage);
-  });
+    elements.forEach(function(element) {
+        element.textContent = element.getAttribute("data-" + selectedLanguage);
+    });
+
+    // Change image source based on selected language
+    var timelineImage = document.querySelector(".timeline");
+    if (selectedLanguage === "uk") {
+        timelineImage.src = "timeline-ukr.png";
+    } else {
+        timelineImage.src = "Timeline copy.png";
+    }
 });
 
 var languageSwitchers = document.getElementById("language-switcher2");
 languageSwitchers.addEventListener("change", function() {
-  var selectedLanguage = this.value;
-  var elements = document.querySelectorAll("[data-en]");
+    var selectedLanguage = this.value;
+    var elements = document.querySelectorAll("[data-en]");
 
-  elements.forEach(function(element) {
-    element.textContent = element.getAttribute("data-" + selectedLanguage);
-  });
+    elements.forEach(function(element) {
+        element.textContent = element.getAttribute("data-" + selectedLanguage);
+    });
+
+    // Change image source based on selected language
+    var timelineImage = document.querySelector(".timeline");
+    if (selectedLanguage === "uk") {
+        timelineImage.src = "timeline-ukr.png";
+    } else {
+        timelineImage.src = "Timeline copy.png";
+    }
 });
 
 // Scroll effect
