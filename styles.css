@@ -11,6 +11,27 @@ body {
     overflow-x: hidden;
 }
 
+.link:link {
+    color: #333;
+    text-decoration: underline;
+}
+
+.link:visited {
+    color: #333;
+    text-decoration: underline;
+}
+
+.link:hover {
+    color: #333;
+    text-decoration: underline;
+}
+
+.link:active {
+    color: #333;
+    text-decoration: underline;
+}
+
+
 .container {
     text-align: center;
     max-width: 800px;
@@ -134,19 +155,6 @@ main section {
 }
 
 
-
-.itinerary{
-    margin-top: 50px;
-    margin-bottom: 0px;
-    margin-left: 10px;
-    opacity: 0;
-    transform: translateY(20px);
-    transition: 1s all ease-in-out;
-}
-.itinerary-appear {
-    opacity: 1;
-    transform: translateY(0px);
-}
 
 
 .color-boxes {
@@ -297,11 +305,13 @@ main section {
     transform: translateY(0px);
 }
 
-#venuep2 {
+#venuep2:link {
     text-decoration: none;
+    color: black;
 }
 
 .venue-p2{
+    color: black;
     text-decoration: none;
     opacity: 0;
     transform: translateY(20px);
@@ -331,7 +341,7 @@ main section {
     padding-left: 20px
     opacity: 0;
     transform: translateY(20px);
-    transition: 0.7s all ease-in-out;
+    transition: 1s all ease-in-out;
 }
 .organization-appear {
     opacity: 1;
@@ -344,7 +354,25 @@ main section {
     color: #333;
     width: 45%;
     padding-left: 220px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: 0.7s all ease-in-out;
 }
+.attire-details-appear {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.details-h3 {
+        opacity: 0;
+    transform: translateY(20px);
+    transition: 0.7s all ease-in-out;
+}
+.details-h3-appear {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
 
 .wedding-photos {
     font-size: 16px;
@@ -352,7 +380,16 @@ main section {
     color: #333;
     width: 45%;
     padding-left: 220px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: 0.7s all ease-in-out;
 }
+.wedding-photos-appear {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+
 
 .organization-details {
     font-size: 16px;
@@ -370,6 +407,43 @@ main section {
     transform: translateY(0px);
 }
 
+.info {
+    font-size: 16px;
+    line-height: 1.3;
+    color: #333;
+    width: 100%;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    text-decoration: none;
+}
+
+.info-2 {
+    font-size: 19px;
+    line-height: 1.5;
+    color: black;
+    width: 100%;
+    font-weight: bolder; 
+
+}
+
+.website {
+    font-size: 16px;
+    line-height: 1.3;
+    color: #333;
+    text-decoration: underline;
+}
+.website:visited {
+    font-size: 16px;
+    line-height: 1.3;
+    color: #333;
+    text-decoration: underline;
+}
+.website:hover {
+    font-size: 16px;
+    line-height: 1.3;
+    color: #333;
+    text-decoration: underline;
+}
 
 
 .timeline {
@@ -438,7 +512,8 @@ p{
 
 
 #hamburger-icon {
-    margin-top: 30px;
+    margin-top: 20px;
+
     display: none;
     cursor: pointer;
     padding-left: 0px;
@@ -471,14 +546,14 @@ p{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
+
 }
 
 .mobile-menu {
     display: none;
     position: absolute;
     top: 50px;
-    left: 0;
+    left: 0px;
     height: calc(100vh - 50px);
     width: 100%
     background-color: white;
@@ -544,6 +619,7 @@ p{
         margin-bottom: 0px;
         padding-bottom: 0px;
         align-self: left;
+
     }
 
     nav ul {
